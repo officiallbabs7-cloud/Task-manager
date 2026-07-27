@@ -4,7 +4,7 @@ function TaskForm({ onAddTask }) {
   const [title, setTitle] = useState('')
   const [priority, setPriority] = useState('Medium')
   const [dueDate, setDueDate] = useState('')
-  const [dueTime, setDueTime] = useState('')
+  const [dueTime, setDueTime] = useState('09:00')
 
   function handleSubmit(e) {
     e.preventDefault()
@@ -24,7 +24,7 @@ function TaskForm({ onAddTask }) {
     setTitle('')
     setPriority('Medium')
     setDueDate('')
-    setDueTime('')
+    setDueTime('09:00')
   }
 
   return (
