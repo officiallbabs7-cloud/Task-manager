@@ -47,7 +47,7 @@ function TaskForm({ onAddTask }) {
         </select>
 
         <input
-          type="date"
+          type="datetime-local"
           value={dueDate}
           onChange={(e) => setDueDate(e.target.value)}
           className="flex-1 border border-gray-300 rounded-xl px-3 py-2 cursor-pointer"

@@ -52,8 +52,16 @@ function TaskItem({ task, onToggleComplete, onDelete, onEdit }) {
             {task.priority}
           </span>
           {task.dueDate && (
-            <span className="text-xs text-gray-500">Due {task.dueDate}</span>
-          )}
+  <span className="text-xs text-gray-500">
+    Due {new Date(task.dueDate).toLocaleString('en-GB', {
+      day: '2-digit',
+      month: '2-digit',
+      year: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit',
+    })}
+  </span>
+)}
         </div>
       </div>
 
